@@ -1,0 +1,333 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
+/* ----------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------- */
+
+
+body {
+    background: #FFFFFF; /* alternative color #FAFAFA */
+    font-family: 'Open Sans', sans-serif;
+    color:#4e4e4e;
+    line-height: 22px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color:#4e4e4e;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+a {
+    color: #c52d2f;
+    -webkit-transition: color 300ms, background-color 300ms;
+    -moz-transition: color 300ms, background-color 300ms;
+    -o-transition:  color 300ms, background-color 300ms;
+    transition:  color 300ms, background-color 300ms;
+}
+
+a:hover, a:focus {
+    color: #d43133;
+}
+
+hr {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
+}
+
+a:hover,
+a:focus {
+    color: #111;
+    text-decoration: none;
+    outline: none;
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.scaleIn {
+    -webkit-animation-name: scaleIn;
+    animation-name: scaleIn;
+}
+
+.lead{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+    margin-bottom: 0;
+}
+
+@-webkit-keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+
+/* ----------------------------------------- */
+/* START FORM DESIGN */
+/* ----------------------------------------- */
+
+/* --- Form header part --- */
+
+#patient-data-form {
+
+}
+
+.form-header {
+    padding: 30px 0;
+	
+}
+
+.form-header h2 {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    border: 1px solid #e5e5e5;
+    text-transform: uppercase;
+}
+#refNo {
+    padding: 20px 0;
+}
+
+#refNo label {
+    font-weight: 400;
+    color: #000;
+}
+
+#refNo input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #111111;
+    width: 60px;
+}
+
+/* --- Form body part --- */
+
+#form-body  {
+    margin-bottom: 20px;
+}
+
+.form-headings span{
+    text-decoration: underline;
+    margin-left: 15px;
+}
+
+.form-group label {
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+.radio label {
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+.form-control {
+	padding: 7px 12px;
+    box-shadow: none;
+    border-radius: 0 !important;
+    border-color: #f2f2f2; /* alternative color #B0CFE0 #f2f2f2, #2980b9, #2c3e50, #16a085, #27ae60*/
+}
+
+.form-group .form-control {
+	margin-left: 15px;
+}
+
+
+.form-group label:last-child {
+    margin-left: 0!important;
+}
+
+.form-sub-headings {
+    margin-left: 35px;
+    text-decoration: underline;
+}
+
+.only-bottom input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #111111;
+    width: 400px !important;
+}
+
+textarea{
+    resize: none;
+    padding: 10px;
+}
+
+button {
+    margin-top: 130px;
+}
+
+
+/* ------------------------------------------- */
+/* 2. Preloader CSS */
+/* ------------------------------------------- */
+#preloader{
+    background-color:#FFFFFF;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*	PRELOADER
+/*------------------------------------------------------------------------*/
+.loader {
+    background: url("../images/preloader/status.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+
+}
+
+
+/* ------------------------------------------- */
+/*  SCROLL-UP CSS */
+/* ------------------------------------------- */
+
+a#scrollUp {
+    bottom: 0px;
+    right: 10px;
+    padding: 5px 10px;
+    background: #FE980F;
+    color: #FFF;
+    -webkit-animation: bounce 2s ease infinite;
+    animation: bounce 2s ease infinite;
+}
+
+.cd-top {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgb(254, 152, 15) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+.no-touch .cd-top:hover {
+    background-color: #FE980F;
+    opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+
+/* ------------------------------------------- */
+/*  FOOTER */
+/* ------------------------------------------- */
+
+#footer-section {
+    background: #FAFAFA;
+    margin-top: 50px;
+    padding: 30px;
+}
